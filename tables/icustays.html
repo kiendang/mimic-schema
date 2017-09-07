@@ -102,7 +102,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 </thead>
 <tbody valign='top'>
-<tr class='odd'>
+<tr class='even'>
  <td class='primaryKey' title='Primary Key'>row_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unique row identifier.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>subject_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -123,7 +123,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="icustays.subject_id refs patients.subject_id via icustays_fk_subject_id"><a href='patients.html'>patients</a><span class='relatedKey'>.subject_id</span>
     </td>
     <td class='constraint detail'>icustays_fk_subject_id<span title='Restrict delete:
@@ -133,7 +133,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the patient.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>hadm_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -143,7 +143,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="icustays.hadm_id refs admissions.hadm_id via icustays_fk_hadm_id"><a href='admissions.html'>admissions</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>icustays_fk_hadm_id<span title='Restrict delete:
@@ -153,7 +153,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the hospital stay.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>icustay_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -162,49 +162,49 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="chartevents.icustay_id refs icustays.icustay_id via chartevents_fk_icustay_id"><a href='chartevents.html'>chartevents</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>chartevents_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.icustay_id refs icustays.icustay_id via datetimeevents_fk_icustay_id"><a href='datetimeevents.html'>datetimeevents</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="inputevents_cv.icustay_id refs icustays.icustay_id via inputevents_cv_fk_icustay_id"><a href='inputevents_cv.html'>inputevents_cv</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>inputevents_cv_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="inputevents_mv.icustay_id refs icustays.icustay_id via inputevents_mv_fk_icustay_id"><a href='inputevents_mv.html'>inputevents_mv</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>inputevents_mv_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="outputevents.icustay_id refs icustays.icustay_id via outputevents_fk_icustay_id"><a href='outputevents.html'>outputevents</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>outputevents_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="prescriptions.icustay_id refs icustays.icustay_id via prescriptions_fk_icustay_id"><a href='prescriptions.html'>prescriptions</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>prescriptions_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="procedureevents_mv.icustay_id refs icustays.icustay_id via procedureevents_mv_fk_icustay_id"><a href='procedureevents_mv.html'>procedureevents_mv</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>procedureevents_mv_fk_icustay_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="transfers.icustay_id refs icustays.icustay_id via transfers_fk_icustay_id"><a href='transfers.html'>transfers</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>transfers_fk_icustay_id<span title='Restrict delete:
@@ -215,7 +215,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Primary key. Identifies the ICU stay.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>dbsource</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>20</td>
@@ -226,7 +226,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Source database of the item.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>first_careunit</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>20</td>
@@ -237,7 +237,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>First careunit associated with the ICU stay.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>last_careunit</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>20</td>
@@ -248,7 +248,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Last careunit associated with the ICU stay.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>first_wardid</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -259,7 +259,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Identifier for the first ward the patient was located in.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>last_wardid</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -270,7 +270,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Identifier for the last ward the patient is located in.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>intime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -281,7 +281,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time of admission to the ICU.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>outtime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -292,7 +292,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time of discharge from the ICU.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>los</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -304,7 +304,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'>Length of stay in the ICU in minutes.</td>
 </tr>
 </table>
-<p title='12 columns'>Table contained 61,532 rows at Wed Aug 16 06:50 UTC 2017<p/>
+<p title='12 columns'>Table contained 61,532 rows at Thu Sep 07 06:09 UTC 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>

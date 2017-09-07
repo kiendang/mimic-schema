@@ -102,7 +102,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 </thead>
 <tbody valign='top'>
-<tr class='odd'>
+<tr class='even'>
  <td class='primaryKey' title='Primary Key'>row_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unique row identifier.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>subject_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -123,7 +123,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="inputevents_mv.subject_id refs patients.subject_id via inputevents_mv_fk_subject_id"><a href='patients.html'>patients</a><span class='relatedKey'>.subject_id</span>
     </td>
     <td class='constraint detail'>inputevents_mv_fk_subject_id<span title='Restrict delete:
@@ -133,7 +133,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the patient.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>hadm_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -143,7 +143,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="inputevents_mv.hadm_id refs admissions.hadm_id via inputevents_mv_fk_hadm_id"><a href='admissions.html'>admissions</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>inputevents_mv_fk_hadm_id<span title='Restrict delete:
@@ -153,7 +153,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the hospital stay.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>icustay_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -163,7 +163,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="inputevents_mv.icustay_id refs icustays.icustay_id via inputevents_mv_fk_icustay_id"><a href='icustays.html'>icustays</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>inputevents_mv_fk_icustay_id<span title='Restrict delete:
@@ -173,7 +173,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the ICU stay.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>starttime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -184,7 +184,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time when the event started.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>endtime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -195,7 +195,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time when the event ended.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>itemid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -206,7 +206,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Foreign key. Identifies the charted item.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>amount</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -217,7 +217,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Amount of the item administered to the patient.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>amountuom</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>30</td>
@@ -228,7 +228,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unit of measurement for the amount.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>rate</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -239,7 +239,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Rate at which the item is being administered to the patient.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>rateuom</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>30</td>
@@ -250,7 +250,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unit of measurement for the rate.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>storetime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -261,7 +261,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time when the event was recorded in the system.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>cgid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -271,7 +271,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="inputevents_mv.cgid refs caregivers.cgid via inputevents_mv_fk_cgid"><a href='caregivers.html'>caregivers</a><span class='relatedKey'>.cgid</span>
     </td>
     <td class='constraint detail'>inputevents_mv_fk_cgid<span title='Restrict delete:
@@ -281,7 +281,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the caregiver.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>orderid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -292,7 +292,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Identifier linking items which are grouped in a solution.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>linkorderid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -303,7 +303,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Identifier linking orders across multiple administrations. LINKORDERID is always equal to the first occuring ORDERID of the series.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>ordercategoryname</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>100</td>
@@ -314,7 +314,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>A group which the item corresponds to.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>secondaryordercategoryname</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>100</td>
@@ -325,7 +325,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>A secondary group for those items with more than one grouping possible.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>ordercomponenttypedescription</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>200</td>
@@ -336,7 +336,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>The role of the item administered in the order.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>ordercategorydescription</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -347,7 +347,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>The type of item administered.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>patientweight</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -358,7 +358,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>For drugs dosed by weight, the value of the weight used in the calculation.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>totalamount</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -369,7 +369,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>The total amount in the solution for the given item.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>totalamountuom</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -380,7 +380,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unit of measurement for the total amount in the solution.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>isopenbag</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -391,7 +391,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Indicates whether the bag containing the solution is open.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>continueinnextdept</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -402,7 +402,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Indicates whether the item will be continued in the next department where the patient is transferred to.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>cancelreason</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -413,7 +413,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Reason for cancellation, if cancelled.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>statusdescription</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>30</td>
@@ -424,7 +424,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>The current status of the order: stopped, rewritten, running or cancelled.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>comments_editedby</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>30</td>
@@ -435,7 +435,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>The title of the caregiver who edited the order.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>comments_canceledby</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>40</td>
@@ -446,7 +446,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>The title of the caregiver who canceled the order.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>comments_date</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -457,7 +457,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time at which the caregiver edited or cancelled the order.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>originalamount</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -468,7 +468,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Amount of the item which was originally charted.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>originalrate</td>
  <td class='detail'>float8</td>
  <td class='detail' align='right'>17,17</td>
@@ -480,7 +480,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'>Rate of administration originally chosen for the item.</td>
 </tr>
 </table>
-<p title='31 columns'>Table contained 3,618,991 rows at Wed Aug 16 06:50 UTC 2017<p/>
+<p title='31 columns'>Table contained 3,618,991 rows at Thu Sep 07 06:09 UTC 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>

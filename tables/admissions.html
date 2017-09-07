@@ -102,7 +102,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 </thead>
 <tbody valign='top'>
-<tr class='odd'>
+<tr class='even'>
  <td class='primaryKey' title='Primary Key'>row_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unique row identifier.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>subject_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -123,7 +123,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="admissions.subject_id refs patients.subject_id via admissions_fk_subject_id"><a href='patients.html'>patients</a><span class='relatedKey'>.subject_id</span>
     </td>
     <td class='constraint detail'>admissions_fk_subject_id<span title='Restrict delete:
@@ -133,7 +133,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the patient.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>hadm_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -142,109 +142,109 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="callout.hadm_id refs admissions.hadm_id via callout_fk_hadm_id"><a href='callout.html'>callout</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>callout_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="chartevents.hadm_id refs admissions.hadm_id via chartevents_fk_hadm_id"><a href='chartevents.html'>chartevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>chartevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="cptevents.hadm_id refs admissions.hadm_id via cptevents_fk_hadm_id"><a href='cptevents.html'>cptevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>cptevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.hadm_id refs admissions.hadm_id via datetimeevents_fk_hadm_id"><a href='datetimeevents.html'>datetimeevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="diagnoses_icd.hadm_id refs admissions.hadm_id via diagnoses_icd_fk_hadm_id"><a href='diagnoses_icd.html'>diagnoses_icd</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>diagnoses_icd_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="drgcodes.hadm_id refs admissions.hadm_id via drgcodes_fk_hadm_id"><a href='drgcodes.html'>drgcodes</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>drgcodes_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="icustays.hadm_id refs admissions.hadm_id via icustays_fk_hadm_id"><a href='icustays.html'>icustays</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>icustays_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="inputevents_cv.hadm_id refs admissions.hadm_id via inputevents_cv_fk_hadm_id"><a href='inputevents_cv.html'>inputevents_cv</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>inputevents_cv_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="inputevents_mv.hadm_id refs admissions.hadm_id via inputevents_mv_fk_hadm_id"><a href='inputevents_mv.html'>inputevents_mv</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>inputevents_mv_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="labevents.hadm_id refs admissions.hadm_id via labevents_fk_hadm_id"><a href='labevents.html'>labevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>labevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="microbiologyevents.hadm_id refs admissions.hadm_id via microbiologyevents_fk_hadm_id"><a href='microbiologyevents.html'>microbiologyevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>microbiologyevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="noteevents.hadm_id refs admissions.hadm_id via noteevents_fk_hadm_id"><a href='noteevents.html'>noteevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>noteevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="outputevents.hadm_id refs admissions.hadm_id via outputevents_fk_hadm_id"><a href='outputevents.html'>outputevents</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>outputevents_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="prescriptions.hadm_id refs admissions.hadm_id via prescriptions_fk_hadm_id"><a href='prescriptions.html'>prescriptions</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>prescriptions_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="procedureevents_mv.hadm_id refs admissions.hadm_id via procedureevents_mv_fk_hadm_id"><a href='procedureevents_mv.html'>procedureevents_mv</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>procedureevents_mv_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="procedures_icd.hadm_id refs admissions.hadm_id via procedures_icd_fk_hadm_id"><a href='procedures_icd.html'>procedures_icd</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>procedures_icd_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="services.hadm_id refs admissions.hadm_id via services_fk_hadm_id"><a href='services.html'>services</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>services_fk_hadm_id<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="transfers.hadm_id refs admissions.hadm_id via transfers_fk_hadm_id"><a href='transfers.html'>transfers</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>transfers_fk_hadm_id<span title='Restrict delete:
@@ -255,7 +255,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Primary key. Identifies the hospital stay.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>admittime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -266,7 +266,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time of admission to the hospital.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>dischtime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -277,7 +277,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time of discharge from the hospital.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>deathtime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -288,7 +288,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time of death.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>admission_type</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -299,7 +299,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Type of admission, for example emergency or elective.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>admission_location</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -310,7 +310,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Admission location.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>discharge_location</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -321,7 +321,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Discharge location</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>insurance</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>255</td>
@@ -332,7 +332,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Insurance type.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>language</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>10</td>
@@ -343,7 +343,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Language.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>religion</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -354,7 +354,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Religon.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>marital_status</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -365,7 +365,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Marital status.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>ethnicity</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>200</td>
@@ -376,7 +376,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Ethnicity.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>edregtime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -387,7 +387,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'></td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>edouttime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -398,7 +398,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'></td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>diagnosis</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>255</td>
@@ -409,7 +409,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Diagnosis.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>hospital_expire_flag</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -420,7 +420,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'></td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>has_chartevents_data</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -432,7 +432,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'>Hospital admission has at least one observation in the CHARTEVENTS table.</td>
 </tr>
 </table>
-<p title='19 columns'>Table contained 58,976 rows at Wed Aug 16 06:50 UTC 2017<p/>
+<p title='19 columns'>Table contained 58,976 rows at Thu Sep 07 06:09 UTC 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>

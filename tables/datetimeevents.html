@@ -102,7 +102,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 </thead>
 <tbody valign='top'>
-<tr class='even'>
+<tr class='odd'>
  <td class='primaryKey' title='Primary Key'>row_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unique row identifier.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>subject_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -123,7 +123,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.subject_id refs patients.subject_id via datetimeevents_fk_subject_id"><a href='patients.html'>patients</a><span class='relatedKey'>.subject_id</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_subject_id<span title='Restrict delete:
@@ -133,7 +133,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the patient.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>hadm_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -143,7 +143,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.hadm_id refs admissions.hadm_id via datetimeevents_fk_hadm_id"><a href='admissions.html'>admissions</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_hadm_id<span title='Restrict delete:
@@ -153,7 +153,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the hospital stay.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>icustay_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -163,7 +163,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.icustay_id refs icustays.icustay_id via datetimeevents_fk_icustay_id"><a href='icustays.html'>icustays</a><span class='relatedKey'>.icustay_id</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_icustay_id<span title='Restrict delete:
@@ -173,7 +173,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the ICU stay.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>itemid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -183,7 +183,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.itemid refs d_items.itemid via datetimeevents_fk_itemid"><a href='d_items.html'>d_items</a><span class='relatedKey'>.itemid</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_itemid<span title='Restrict delete:
@@ -193,7 +193,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the charted item.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>charttime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -204,7 +204,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time when the event occured.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>storetime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -215,7 +215,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Time when the event was recorded in the system.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>cgid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -225,7 +225,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.cgid refs caregivers.cgid via datetimeevents_fk_cgid"><a href='caregivers.html'>caregivers</a><span class='relatedKey'>.cgid</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_cgid<span title='Restrict delete:
@@ -235,7 +235,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the caregiver.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>value</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -246,7 +246,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Value of the event as a text string.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>valueuom</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -257,7 +257,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unit of measurement.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>warning</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -268,7 +268,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Flag to highlight that the value has triggered a warning.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>error</td>
  <td class='detail'>int2</td>
  <td class='detail' align='right'>5</td>
@@ -279,7 +279,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Flag to highlight an error with the event.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>resultstatus</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -290,7 +290,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Result status of lab data.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>stopped</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -302,7 +302,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'>Event was explicitly marked as stopped. Infrequently used by caregivers.</td>
 </tr>
 </table>
-<p title='14 columns'>Table contained 4,485,937 rows at Wed Aug 16 06:50 UTC 2017<p/>
+<p title='14 columns'>Table contained 4,485,937 rows at Thu Sep 07 06:09 UTC 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>

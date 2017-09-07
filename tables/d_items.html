@@ -102,7 +102,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 </thead>
 <tbody valign='top'>
-<tr class='odd'>
+<tr class='even'>
  <td class='primaryKey' title='Primary Key'>row_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unique row identifier.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>itemid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -122,13 +122,13 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="chartevents.itemid refs d_items.itemid via chartevents_fk_itemid"><a href='chartevents.html'>chartevents</a><span class='relatedKey'>.itemid</span>
     </td>
     <td class='constraint detail'>chartevents_fk_itemid<span title='Restrict delete:
  Parent cannot be deleted if children exist'>&nbsp;R</span></td>
    </tr>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="datetimeevents.itemid refs d_items.itemid via datetimeevents_fk_itemid"><a href='datetimeevents.html'>datetimeevents</a><span class='relatedKey'>.itemid</span>
     </td>
     <td class='constraint detail'>datetimeevents_fk_itemid<span title='Restrict delete:
@@ -139,7 +139,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Primary key. Identifies the charted item.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>label</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>200</td>
@@ -150,7 +150,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Label identifying the item.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>abbreviation</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>100</td>
@@ -161,7 +161,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Abbreviation associated with the item.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>dbsource</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>20</td>
@@ -172,7 +172,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Source database of the item.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>linksto</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -183,7 +183,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Table which contains data for the given ITEMID.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>category</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>100</td>
@@ -194,7 +194,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Category of data which the concept falls under.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>unitname</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>100</td>
@@ -205,7 +205,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unit associated with the item.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>param_type</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>30</td>
@@ -216,7 +216,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Type of item, for example solution or ingredient.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>conceptid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -228,7 +228,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'>Identifier used to harmonize concepts identified by multiple ITEMIDs. CONCEPTIDs are planned but not yet implemented (all values are NULL).</td>
 </tr>
 </table>
-<p title='10 columns'>Table contained 12,487 rows at Wed Aug 16 06:50 UTC 2017<p/>
+<p title='10 columns'>Table contained 12,487 rows at Thu Sep 07 06:09 UTC 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>

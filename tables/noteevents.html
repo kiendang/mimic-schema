@@ -102,7 +102,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </tr>
 </thead>
 <tbody valign='top'>
-<tr class='even'>
+<tr class='odd'>
  <td class='primaryKey' title='Primary Key'>row_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Unique row identifier.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='indexedColumn' title='Indexed'>subject_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -123,7 +123,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative odd' valign='top'>
+   <tr class='relative even' valign='top'>
     <td class='relatedTable detail' title="noteevents.subject_id refs patients.subject_id via noteevents_fk_subject_id"><a href='patients.html'>patients</a><span class='relatedKey'>.subject_id</span>
     </td>
     <td class='constraint detail'>noteevents_fk_subject_id<span title='Restrict delete:
@@ -133,7 +133,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the patient.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>hadm_id</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -143,7 +143,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="noteevents.hadm_id refs admissions.hadm_id via noteevents_fk_hadm_id"><a href='admissions.html'>admissions</a><span class='relatedKey'>.hadm_id</span>
     </td>
     <td class='constraint detail'>noteevents_fk_hadm_id<span title='Restrict delete:
@@ -153,7 +153,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the hospital stay.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>chartdate</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -164,7 +164,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Date when the note was charted.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>charttime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -175,7 +175,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Date and time when the note was charted. Note that some notes (e.g. discharge summaries) do not have a time associated with them: these notes have NULL in this column.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>storetime</td>
  <td class='detail'>timestamp</td>
  <td class='detail' align='right'>22</td>
@@ -186,7 +186,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'></td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='indexedColumn' title='Indexed'>category</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>50</td>
@@ -197,7 +197,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Category of the note, e.g. Discharge summary.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>description</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>255</td>
@@ -208,7 +208,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>A more detailed categorization for the note, sometimes entered by free-text.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>cgid</td>
  <td class='detail'>int4</td>
  <td class='detail' align='right'>10</td>
@@ -218,7 +218,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'></td>
  <td class='detail'>
   <table border='0' width='100%' cellspacing='0' cellpadding='0'>
-   <tr class='relative even' valign='top'>
+   <tr class='relative odd' valign='top'>
     <td class='relatedTable detail' title="noteevents.cgid refs caregivers.cgid via noteevents_fk_cgid"><a href='caregivers.html'>caregivers</a><span class='relatedKey'>.cgid</span>
     </td>
     <td class='constraint detail'>noteevents_fk_cgid<span title='Restrict delete:
@@ -228,7 +228,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  </td>
  <td class='comment detail'>Foreign key. Identifies the caregiver.</td>
 </tr>
-<tr class='odd'>
+<tr class='even'>
  <td class='detail'>iserror</td>
  <td class='detail'>bpchar</td>
  <td class='detail' align='right'>1</td>
@@ -239,7 +239,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='detail'> </td>
  <td class='comment detail'>Flag to highlight an error with the note.</td>
 </tr>
-<tr class='even'>
+<tr class='odd'>
  <td class='detail'>text</td>
  <td class='detail'>text</td>
  <td class='detail' align='right'>2147483647</td>
@@ -251,7 +251,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'>Content of the note.</td>
 </tr>
 </table>
-<p title='11 columns'>Table contained 2,083,180 rows at Wed Aug 16 06:50 UTC 2017<p/>
+<p title='11 columns'>Table contained 2,083,180 rows at Thu Sep 07 06:09 UTC 2017<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>
